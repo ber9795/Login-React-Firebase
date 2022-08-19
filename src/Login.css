@@ -1,0 +1,106 @@
+*{
+ 
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+
+}
+
+body {
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+section {
+
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image:url("land.jpg");
+  background-position: center center;
+  background-size:cover;
+}
+
+.main {
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 380px;
+padding: 50px 30px;
+border-radius: 10px;
+box-shadow: 7px 7px 60px;
+background: linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3));
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+
+.input {
+width: 100%;
+display: block;
+padding: 10px;  
+color:#222;
+border: none;
+outline: none;
+margin: 1em 0;
+}
+
+.button {
+
+  background-color: rgb(184, 38, 86);
+  color: white;
+  text-transform: upercase;
+  font-size: 1.5em;
+  border: none;
+  width: 100%;
+  opacity: .9;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 3;
+}
+
+button:active{ 
+  background-color:rgb(119, 22, 54);
+}
+
+
+
+.Button {
+
+  background-color: transparent;
+  color: white;
+  position: relative;
+  text-transform: upercase;
+  text-decoration:solid;
+  font-size: 0.9em;
+  border: none;
+  width: 100%;
+  opacity: .9;
+  text-align: center;
+  bottom:-40px;
+  cursor: pointer;
+
+}
+
+.Button:hover {
+  opacity: 3;
+}
+
+
+.words {
+  text-align:center;
+  font-size: 0.5em;
+  bottom:-200px;
+  width: 100%;
+  
+  }

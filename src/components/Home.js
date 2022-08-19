@@ -1,21 +1,22 @@
-
-import{useAuthState} from 'react-firebase-hooks/auth'
-import {auth} from '../Firebase'
-import {useNavigate} from 'react-router-dom'
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../Firebase";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
-    const navigate=useNavigate()
-    const[user, error]=useAuthState(auth)
-    const signOutClick =()=> {
-        auth.signOut()
-        navigate('/')
-    }
+  const navigate = useNavigate();
+  const [user] = useAuthState(auth);
+  const signOutClick = () => {
+    auth.signOut();
+    navigate("/");
+  };
   return (
     <>
-    <h1>Welcome {user?.email}</h1>
-    <button onClick={()=>signOutClick()}>Signout </button>
+      <div className="word">
+        <h2>Welcome:{user?.email}</h2>
+        <button onClick={() => signOutClick()}>Signout </button>
+      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
